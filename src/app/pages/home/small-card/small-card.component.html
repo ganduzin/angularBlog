@@ -1,14 +1,13 @@
-<a href="">
+<a [routerLink]="['articleContent', id]">
     <div class="article">
+        <img class="article-img" src="{{photoBomb}}" alt="">
         <div class="article-text">
             <div class="article-info">
                 <p class="category">{{category}}</p>
                 <p class="lenght">{{lenght}} MIN READ</p>
             </div>
-            <h1 class="title">{{titleInputed}}</h1>
-            <p class="date">09.13.2017</p>
-    
+            <h2 class="title">{{titleInputed}}</h2>
+            <p class="date">{{date}}</p>
         </div>
-        <img class="article-img" src="{{photoBomb}}" alt="deu algum erro">
     </div>
 </a>
